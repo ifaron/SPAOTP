@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{467E102E-BDE1-45BE-913C-9B2AD8049EC4}</ProjectGuid>
+    <ProjectGuid>{575FA502-E3D8-4DBC-A833-A5D8F6EAF7FF}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AssembyLoader</RootNamespace>
-    <AssemblyName>AssembyLoader</AssemblyName>
+    <RootNamespace>XmlReaderTester</RootNamespace>
+    <AssemblyName>XmlReaderTester</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -32,30 +32,30 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="OTP.WebAPI">
-      <HintPath>..\..\..\10Project\05OTP_New\Test\OTPWeb3.0\bin\OTP.WebAPI.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="XiaoYingZhou.Core">
+      <HintPath>..\..\..\10Project\11XiaoYingZhou\Code\WorkingCode - 副本\OutputDbg\XiaoYingZhou.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="XiaoYingZhou.ErrorCodeLib">
+      <HintPath>..\..\..\10Project\11XiaoYingZhou\Code\WorkingCode - 副本\OutputDbg\XiaoYingZhou.ErrorCodeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="XiaoYingZhou.Global">
+      <HintPath>..\..\..\10Project\11XiaoYingZhou\Code\WorkingCode - 副本\OutputDbg\XiaoYingZhou.Global.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClassA.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\TestProject\TestProject.csproj">
-      <Project>{1a036e23-1229-4898-9d3c-67093455d68c}</Project>
-      <Name>TestProject</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

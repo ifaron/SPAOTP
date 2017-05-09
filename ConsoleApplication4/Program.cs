@@ -120,14 +120,85 @@ namespace ConsoleApplication4
 
             //Console.WriteLine(sb.ToString());
 
-            ThreadTester tester = new ThreadTester();
-            tester.Start();
+            //ThreadTester tester = new ThreadTester();
+            //tester.Start();
 
-            Thread.Sleep(10000);
+            //Thread.Sleep(10000);
 
-            tester.Stop();
+            //tester.Stop();
+
+
+            //List<string> list = new List<string>();
+            //list.Add("A"); list.Add("B"); list.Add("C"); list.Add("A"); list.Add("E");
+
+            //list.ForEach(item =>
+            //{
+            //    list.Remove(item);
+            //});
+
+            //list.RemoveAll(p => p.Equals("A"));
+
+
+            //int x = 1000, y = 10000;
+            //int[] valueArray = new int[x * y];
+            //Hashtable valueHT = new Hashtable();
+            //Dictionary<int, int> valueDict = new Dictionary<int, int>();
+
+            //for (int i = 0; i < x * y; i++)
+            //{
+            //    var value = new Random().Next(int.MaxValue);
+            //    valueArray[i] = value;
+            //    //valueHT.Add(i.ToString(), value);
+            //   // valueDict.Add(i, value);
+            //}
+
+            //Stopwatch sw = new Stopwatch();
+
+            //sw.Start();
+            //for (int i = 0; i < x * y; i++)
+            //{
+            //    int v = valueArray[i];              
+            //}
+            //sw.Stop();
+            //Console.WriteLine("数组用时：" + sw.ElapsedMilliseconds);
+
+            //sw.Restart();
+            //for (int i = 0; i < x * y; i++)
+            //{
+            //    var v = valueHT[i];
+            //}  
+            //sw.Stop();
+            //Console.WriteLine("Hashtable用时：" + sw.ElapsedMilliseconds);
+
+            //sw.Restart();
+            //for (int i = 0; i < x * y; i++)
+            //{
+            //    var v = valueDict[i];
+            //}  
+            //sw.Stop();
+            //Console.WriteLine("Dictionary用时：" + sw.ElapsedMilliseconds);
+
+
+            //var str = "0000002";
+            //var b = int.Parse(str);
+
+
+            //var list = new List<DataObject>();
+
+            //var amount = list.Sum(p => p.Amount);
+
+            var a = 3 % 2;
 
             Console.ReadLine();
+        }
+
+        private class DataObject
+        {
+            public decimal Amount
+            {
+                get;
+                set;
+            }
         }
 
         private static void BuildAngularJsServices()

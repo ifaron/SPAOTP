@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -35,6 +36,12 @@
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\10Project\04OTP\WorkingCode\ThirdpartyLib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="OTP.Business.Contract">
+      <HintPath>..\..\..\10Project\05OTP_New\TEST\OTPWeb3.0_ForNewOTS\bin\OTP.Business.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="OTP.Framework.Contract">
+      <HintPath>..\..\..\10Project\05OTP_New\TEST\OTPWeb3.0_ForNewOTS\bin\OTP.Framework.Contract.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

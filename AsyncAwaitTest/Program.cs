@@ -12,7 +12,9 @@ namespace AsyncAwaitTest
         {
             Console.WriteLine("开始");
 
-            new Tester().Test();
+            //new Tester().Test();
+
+            new Converter().ToDouble();
 
             Console.WriteLine("结束");
 
@@ -53,6 +55,15 @@ namespace AsyncAwaitTest
 
                 return sb.ToString();
             });
+        }
+    }
+
+    public class Converter
+    {
+        public void ToDouble()
+        {
+            object value = null;
+            double v = value != null ? double.Parse(value.ToString()) : 0;
         }
     }
 }
